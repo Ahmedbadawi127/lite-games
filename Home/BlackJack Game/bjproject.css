@@ -1,0 +1,141 @@
+body{
+	background-image: url("blackjack.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+}
+
+section{
+	float: left;
+}
+
+h1{
+	text-align: center;
+	color: #eaeaea;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 10px;
+    width: 600px;
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    display: table;
+    padding: 10px;
+    background-color: black;
+}
+
+th, td{
+	color: #eaeaea;
+	font-family: cursive;
+}
+
+div.buttonbox{
+	width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+div.textupdates
+{
+    width: 600px;
+    height: auto;
+    background-color: #eaeaea;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.cool
+{
+    background-color: #ff0000;
+}
+
+.hot
+{
+    background-color: #2336ac;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+.blackcard
+{
+    font-weight: bold;      
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.redcard
+{
+    color: red;
+    font-weight: bold;   
+}
+
+li
+{
+    list-style-type: none;   
+}
+
+button
+{
+    font-size: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 2px solid #000000; /* black */    
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button#newgame
+{
+    background-color: green;
+    width: 140px;
+}
+
+
+button#hit
+{
+    background-color: green;
+    width: 120px;
+}
+
+button#stay
+{
+    background-color: red;
+    width: 120px;
+}
+
+#tracker
+{   
+    border-top: 3px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 25px;
+}
+
+.sugg-bg{
+    border-top: 3px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 25px;
+}
