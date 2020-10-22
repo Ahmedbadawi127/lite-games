@@ -3,7 +3,6 @@ const canvas = document.getElementById("pingpong");
 
 // getContext of canvas = methods and properties to draw and do a lot of thing to the canvas
 const ctx = canvas.getContext('2d');
-
 // load sounds
 let hit = new Audio();
 let wall = new Audio();
@@ -130,7 +129,7 @@ function update(){
                 com.score=-1;
             user.score=0;
            
-             
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
 
         }else{
         comScore.play();
