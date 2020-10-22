@@ -128,8 +128,6 @@ function update(){
                 alert("you lost \n game is over");
                 com.score=-1;
             user.score=0;
-           
-            ctx.clearRect(0, 0, canvas.width, canvas.height)
 
         }else{
         comScore.play();
