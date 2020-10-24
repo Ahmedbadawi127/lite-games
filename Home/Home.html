@@ -31,48 +31,47 @@
     <body   style="background-color:cornsilk">
           <section class="container-fluid" style="margin:0px; padding: 0px;">
             <div class="row">
-              <nav class="navbar navbar-expand-sm   fixed-top" style="background-color:#ce3737;">
+              <nav class="navbar navbar-expand-sm    fixed-top"style="background-color:#ce3737;">
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                  <img src="res\logo.jpeg" alt="logo" style="width:100px;height: 40px;">
-                </a>
+                <a class="navbar-brand" href="#"> <img src="res\logo.jpeg" alt="logo" style="width:100px;height: 40px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-center" id="collapsibleNavbar"> 
+                  </button>
+                <div class=" navbar-collapse  justify-content-center" id="collapsibleNavbar"> 
                 <!-- Links -->
-                <ul class="navbar-nav justify-content-between w-100  "style="margin-left:100px;"  >
-                  <li class="nav-item change">
-                    <a class="nav-link changecolor" href="#" style="color: whitesmoke;font-size: 25px;">Home</a>
+                <ul class="navbar-nav justify-content-between w-100 "style="margin-left:100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: whitesmoke;font-size: 25px;">Home</a>
                   </li>
-                  <li class="nav-item change">
-                    <a class="nav-link" href="#blockquote"style="color:whitesmoke;font-size: 25px;">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: whitesmoke;font-size: 25px;">About</a>
                   </li>
-                  <li class="nav-item change">
+                  <li class="nav-item">
                     <a class="nav-link" href="#" style="color: whitesmoke;font-size: 25px;">Contacts</a>
                   </li>
                   <!-- Dropdown -->
-                  <li class="nav-item dropdown change">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color: whitesmoke;font-size: 25px;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"style="color: whitesmoke;font-size: 25px;">
                       link menu
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu" >
                       <a class="dropdown-item" href="XO\xo.html"> Tic tac toc</a>
                       <a class="dropdown-item" href="BlackJack Game/bjproject.html">BlackJack</a>
                       <a class="dropdown-item" href="pingpong\ping.html">PingPong</a>
                     </div>
                   </li>
-                  <li>
+                  <li class="nav-item">
                     <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal" style="background-color: black;margin: 5px;">
                       Register
                   </button>
                     <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal3"  style="background-color: black">
                      Login
                   </button>
-              </li>
+        
+                </li>
                 </ul>
                 </div>
-               
+                
               </nav>
             </div>
           
@@ -211,27 +210,32 @@
                           <div class="modal-content">
                       
                               <!-- Modal Header -->
-                              <div class="modal-header">
-                              <h4 class="modal-title">registration page</h4>
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-                      
-                              <!-- Modal body -->
-                              <div class="modal-body">
-                                  <input type="text" name="name" value="username"><br><br><br>
-                                  <input type="text" name="passwd" value="passwd"><br><br><br>
-                                  <input type="text" name="email" value="email"><br><br><br>
-                                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                              </div>
-                      
-                              <!-- Modal footer -->
-                              <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">finish</button>
-                              </div>
-                      
+                              <div class="modal-header" >
+                                <h4 class="modal-title" style="color:#ce3737;">Registration page</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body"style="background-color: aliceblue;">
+                                    <input type="text" name="name" placeholder="Username"><br><br><br>
+                                    <input type="password" name="password" placeholder="Password"><br><br><br>
+                                    <input type="email" name="email" placeholder="Email"><br><br><br>
+                                    
+  
+                                    
+                                    
+                                   
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">finish</button>
+                                </div>
+                        
+                            </div>
+                            </div>
                           </div>
-                          </div>
-                        </div>
+  
                       </section>
                        <!-- The Modal -->
                        <section>
@@ -276,12 +280,13 @@
                           <div class="modal fade modal-md justify-content-center" id="myModal3">
                             <div class="modal-dialog  modal-dialog-centered   modal-dialog-scrollable">
                             <div class="modal-content">
-                              <div class="modal-body " style="text-align: center;">
-                                <label for="email"  > Email: </label>
-                                <input type="text" name="email" value="please enter your email"><br>
-                                <label for="passwd"  > passwd: </label>
-                                <input type="text" name="passwd" value="please enter your passwd"> 
-                                <br><br><br><br>
+                              <div class="modal-body " style="text-align: center;background-color: aliceblue;">
+                                <br>
+                                <label for="email" style="color:#ce3737 !important"> Email: </label>
+                                <input type="text" name="email" placeholder="please enter your Email"><br> <br> <br>
+                                <label for="passwd" style="color:#ce3737"> Password: </label>
+                                <input type="text" name="Password" placeholder="please enter your password"> 
+                                <br><br>
                               </div>                    
                               <!-- Modal footer -->
                               <div class="modal-footer">
