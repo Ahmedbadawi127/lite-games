@@ -1,7 +1,7 @@
 // select canvas element
 const canvas = document.getElementById("pingpong");
 
-// getContext of canvas = methods and properties to draw and do a lot of thing to the canvas
+// getContext of canvas 
 const ctx = canvas.getContext('2d');
 // load sounds
 let hit = new Audio();
@@ -27,9 +27,8 @@ const ball = {
 
 // User Paddle
 const user = {
-    x : (canvas.width - 100)/2, // left side of canvas
-    y : 0 , // -100 the height of paddle
-    width : 100,
+    x : (canvas.width - 100)/2, 
+    y : 0 , 
     height : 10,
     score : 0,
     color : "ORANGE"
@@ -37,9 +36,8 @@ const user = {
 
 // COM Paddle
 const com = {
-    x : (canvas.width - 100)/2, // - width of paddle
-    y : canvas.height - 10, // -100 the height of paddle
-    width : 100,
+    x : (canvas.width - 100)/2,
+    y : canvas.height - 10, 
     height : 10,
     score : 0,
     color : "ORANGE"
@@ -78,7 +76,7 @@ function getMousePos(evt){
     user.x = evt.clientX - rect.left - user.width/2;
 }
 
-// when COM or USER scores, we reset the ball
+// when COM or USER wins, we reset the ball
 function resetBall(){
     ball.x = canvas.width/2;
     ball.y = canvas.height/2;
@@ -115,10 +113,10 @@ function collision(b,p){
     return p.top < b.bottom && p.left < b.right && p.bottom > b.top && p.right > b.left;
 }
 
-// update function, the function that does all calculations
+// update function
 function update(){
     
-    // change the score of players, if the ball goes to the left "ball.x<0" computer win, else if "ball.x > canvas.width" the user win
+    // change the score of players, if the ball goes to the left "ball.y<0" computer win, else if "ball.y > canvas.height" the user win
     if( ball.y - ball.radius < 0 ){
         com.score++;
         if( com.score == 5){
@@ -156,10 +154,10 @@ function update(){
     ball.y += ball.velocityY;
     
     // computer plays for itself, and we must be able to beat it
-    // simple AI
+   
     com.x += ((ball.x - (com.x + com.width/2)))*0.1;
     
-    // when the ball collides with bottom and top walls we inverse the y velocity.
+    // when the ball collides with bottom and top walls we inverse the x velocity.
     if(ball.x - ball.radius < 0 || ball.x + ball.radius > canvas.width){
         ball.velocityX = -ball.velocityX;
         wall.play();
@@ -174,8 +172,7 @@ function update(){
         hit.play();
         // we check where the ball hits the paddle
         let collidePoint = (ball.x - (player.x + player.width/2));
-        // normalize the value of collidePoint, we need to get numbers between -1 and 1.
-        // -player.height/2 < collide Point < player.height/2
+        // -player.width/2 < collide Point < player.width/2
         collidePoint = collidePoint / (player.width/2);
         
         // when the ball hits the top of a paddle we want the ball, to take a -45degees angle
